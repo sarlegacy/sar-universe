@@ -1,105 +1,207 @@
+# SAR Legacy Platform
 
-# [Next.js Enterprise Boilerplate](https://blazity.com/open-source/nextjs-enterprise-boilerplate) 
+![SAR Legacy Platform](https://img.shields.io/badge/SAR-Legacy%20Platform-gold?style=for-the-badge)
+![Next.js](https://img.shields.io/badge/Next.js-14-black?style=flat-square&logo=next.js)
+![TypeScript](https://img.shields.io/badge/TypeScript-5-blue?style=flat-square&logo=typescript)
+![Tailwind CSS](https://img.shields.io/badge/Tailwind-CSS-38bdf8?style=flat-square&logo=tailwind-css)
 
-A production-ready template for building enterprise applications with Next.js. This boilerplate provides a solid foundation with carefully selected technologies and ready-to-go infrastructure to help you develop high-quality applications efficiently.
+A production-ready enterprise platform designed for legacy system management, modernization, and digital transformation. Built with Next.js and modern web technologies to bridge the gap between legacy infrastructure and contemporary business needs.
 
-## Motivation
+## 🏛️ Overview
 
-While most Next.js boilerplates focus on individual developer needs with excessive complexity, **next-enterprise** prioritizes strategic simplicity for enterprise teams. It offers a streamlined foundation with high-impact features that maximize developer productivity and accelerate time-to-market for business-critical applications.
+SAR Legacy Platform provides organizations with the tools and infrastructure needed to:
+- **Preserve** critical legacy systems and data
+- **Modernize** outdated processes with contemporary workflows
+- **Integrate** legacy systems with modern applications
+- **Scale** enterprise operations efficiently
 
-<a href="https://blazity.com/">
-<picture>
-  <source media="(prefers-color-scheme: dark)" srcset="/assets/blazity-logo-dark.svg">
-  <source media="(prefers-color-scheme: light)" srcset="/assets/blazity-logo-light.svg">
-  <img alt="Logo" align="right" height="80" src="/assets/blazity-logo-light.svg">
-</picture>
-</a>
+## ✨ Features
 
-> [!NOTE]
-> **Blazity** is a group of Next.js architects. We help organizations architect, optimize, and deploy high-performance Next.js applications at scale. Contact us at [contact@blazity.com](https://blazity.com) if you’d like to talk about your project.
+### Core Platform
+- 🔐 **Enterprise Security** - Role-based access control and audit trails
+- 📊 **System Analytics** - Comprehensive monitoring and reporting
+- 🔄 **Legacy Integration** - Seamless connection to existing systems
+- 🚀 **Modern UI/UX** - Intuitive interface built with React and Tailwind CSS
 
+### Technical Capabilities
+- ⚡ **High Performance** - Optimized for enterprise-scale operations
+- 🔧 **Extensible Architecture** - Plugin-based system for custom functionality
+- 📱 **Responsive Design** - Full mobile and tablet compatibility
+- 🌐 **API-First** - RESTful APIs for third-party integrations
 
+### Enterprise Features
+- 📈 **Scalability** - Handles growing data and user loads
+- 🛡️ **Compliance** - Built-in support for industry standards
+- 🔍 **Advanced Search** - Powerful search and filtering capabilities
+- 📋 **Workflow Management** - Automated business process handling
 
-## Documentation
+## 🚀 Quick Start
 
-There is a separate documentation that explains its functionality, highlights core business values and technical decisions, provides guidelines for future development, and includes architectural diagrams.
+### Prerequisites
+- Node.js 18+ 
+- npm 8+ or yarn
+- Git
 
-We encourage you to [visit our docs (docs.blazity.com)](https://docs.blazity.com) to learn more
+### Installation
 
-## Integrated features
+1. **Clone the repository**
+```bash
+git clone https://github.com/sarlegacy/sar-legacy.git
+cd sar-legacy
+```
 
-### Boilerplate
-With this template you will get all the boilerplate features included:
+2. **Install dependencies**
+```bash
+npm install
+# or
+yarn install
+```
 
-* [Next.js 15](https://nextjs.org/) - Performance-optimized configuration using App Directory
-* [Tailwind CSS v4](https://tailwindcss.com/) - Utility-first CSS framework for efficient UI development
-* [ESlint 9](https://eslint.org/) and [Prettier](https://prettier.io/) - Code consistency and error prevention
-* [Corepack](https://github.com/nodejs/corepack) & [pnpm](https://pnpm.io/) as the package manager - For project management without compromises 
-* [Strict TypeScript](https://www.typescriptlang.org/) - Enhanced type safety with carefully crafted config and [ts-reset](https://github.com/total-typescript/ts-reset) library
-* [GitHub Actions](https://github.com/features/actions) - Pre-configured workflows including bundle size and performance tracking
-* Perfect Lighthouse score - Optimized performance metrics
-* [Bundle analyzer](https://www.npmjs.com/package/@next/bundle-analyzer) - Monitor and manage bundle size during development
-* Testing suite - [Vitest](https://vitest.dev), [React Testing Library](https://testing-library.com/react), and [Playwright](https://playwright.dev/) for comprehensive testing
-* [Storybook](https://storybook.js.org/) - Component development and documentation
-* Advanced testing - Smoke and acceptance testing capabilities
-* [Conventional commits](https://www.conventionalcommits.org/) - Standardized commit history management
-* [Observability](https://opentelemetry.io/) - Open Telemetry integration
-* [Absolute imports](https://nextjs.org/docs/advanced-features/module-path-aliases) - Simplified import structure
-* [Health checks](https://kubernetes.io/docs/tasks/configure-pod-container/configure-liveness-readiness-startup-probes/) - Kubernetes-compatible monitoring
-* [Radix UI](https://www.radix-ui.com/) - Headless components for customization
-* [CVA](http://cva.style/) (Class Variance Authority) - Consistent design system creation
-* [Renovate BOT](https://www.whitesourcesoftware.com/free-developer-tools/renovate) - Automated dependency and security updates
-* [Patch-package](https://www.npmjs.com/package/patch-package) - External dependency fixes without compromises
-* Component relationship tools - Graph for managing coupling and cohesion
-* [Semantic Release](https://github.com/semantic-release/semantic-release) - Automated changelog generation
-* [T3 Env](https://env.t3.gg/) - Streamlined environment variable management
+3. **Set up environment variables**
+```bash
+cp .env.example .env.local
+# Edit .env.local with your configuration
+```
 
-### Infrastructure & deployments
+4. **Run the development server**
+```bash
+npm run dev
+# or
+yarn dev
+```
 
-#### Vercel
+5. **Open your browser**
+Navigate to [http://localhost:3000](http://localhost:3000)
 
-Easily deploy your Next.js app with [Vercel](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=github&utm_campaign=next-enterprise) by clicking the button below:
+## 🛠️ Development
 
-[![Vercel](https://vercel.com/button)](https://vercel.com/new/git/external?repository-url=https://github.com/Blazity/next-enterprise)
+### Available Scripts
 
-#### Custom cloud infrastructure
+| Command | Description |
+|---------|-------------|
+| `npm run dev` | Start development server |
+| `npm run build` | Build for production |
+| `npm run start` | Start production server |
+| `npm run lint` | Run ESLint |
+| `npm run test` | Run test suite |
+| `npm run type-check` | TypeScript type checking |
 
-**next-enterprise** offers dedicated infrastructure as code (IaC) solutions built with Terraform, designed specifically for deploying Next.js applications based on our extensive experience working with enterprise clients.
+### Project Structure
 
-Learn more in our [documentation (docs.blazity.com)][docs] how to quickstart with the deployments using simple CLI.
+```
+sar-legacy/
+├── app/                    # Next.js 13+ App Router
+│   ├── (dashboard)/       # Dashboard routes
+│   ├── api/               # API routes
+│   └── globals.css        # Global styles
+├── components/            # Reusable UI components
+│   ├── ui/               # Base UI components
+│   └── features/         # Feature-specific components
+├── lib/                  # Utilities and configurations
+├── public/               # Static assets
+├── types/                # TypeScript type definitions
+└── docs/                 # Documentation
+```
 
-#### Available cloud providers and theirs features:
+## 🔧 Configuration
 
-* **AWS (Amazon Web Services)**
-  * Automated provisioning of AWS infrastructure
-  * Scalable & secure setup using:
-     * VPC - Isolated network infrastructure
-     * Elastic Container Service (ECS) - Container orchestration
-     * Elastic Container Registry (ECR) - Container image storage
-     * Application Load Balancer - Traffic distribution
-     * S3 + CloudFront - Static asset delivery and caching
-     * AWS WAF - Web Application Firewall protection
-     * Redis Cluster - Caching
-  * CI/CD ready - Continuous integration and deployment pipeline
+### Environment Variables
 
-*... more coming soon*
+Create a `.env.local` file in the root directory:
 
-### Team & maintenance
+```env
+# Application
+NEXT_PUBLIC_APP_NAME="SAR Legacy Platform"
+NEXT_PUBLIC_APP_DESCRIPTION="Enterprise Legacy System Management"
+NEXT_PUBLIC_APP_URL="https://your-domain.com"
 
-**next-enterprise** is backed and maintained by [Blazity](https://blazity.com), providing up to date security features and integrated feature updates.
+# Database
+DATABASE_URL="your-database-url"
 
-#### Active maintainers
+# Authentication
+NEXTAUTH_URL="https://your-domain.com"
+NEXTAUTH_SECRET="your-secret-key"
 
-- Igor Klepacki ([neg4n](https://github.com/neg4n)) - Open Source Software Developer
-- Tomasz Czechowski ([tomaszczechowski](https://github.com/tomaszczechowski)) - Solutions Architect & DevOps
-- Jakub Jabłoński ([jjablonski-it](https://github.com/jjablonski-it)) - Head of Integrations
+# API Keys
+API_KEY="your-api-key"
+```
 
-#### All-time contributors
-[bmstefanski](https://github.com/bmstefanski)
+## 🚢 Deployment
 
-## License
+### Vercel (Recommended)
 
-MIT
+[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https://github.com/sarlegacy/sar-legacy)
 
+### Docker
 
-[docs]: https://docs.blazity.com/next-enterprise/deployments/enterprise-cli
+```bash
+# Build the image
+npm run docker:build
+
+# Run the container
+npm run docker:run
+```
+
+### Manual Deployment
+
+```bash
+# Build the application
+npm run build
+
+# Start the production server
+npm start
+```
+
+## 📖 Documentation
+
+- [Getting Started Guide](./docs/getting-started.md)
+- [API Documentation](./docs/api.md)
+- [Deployment Guide](./docs/deployment.md)
+- [Contributing Guidelines](./CONTRIBUTING.md)
+
+## 🏗️ Architecture
+
+SAR Legacy Platform is built with:
+
+- **Frontend**: Next.js 14, React 18, TypeScript
+- **Styling**: Tailwind CSS, Headless UI
+- **State Management**: React Context, React Hook Form
+- **Database**: PostgreSQL (recommended)
+- **Authentication**: NextAuth.js
+- **Testing**: Jest, React Testing Library
+- **Code Quality**: ESLint, Prettier, Husky
+
+## 🤝 Contributing
+
+We welcome contributions! Please see our [Contributing Guidelines](./CONTRIBUTING.md) for details.
+
+1. Fork the repository
+2. Create a feature branch (`git checkout -b feature/amazing-feature`)
+3. Commit your changes (`git commit -m 'Add amazing feature'`)
+4. Push to the branch (`git push origin feature/amazing-feature`)
+5. Open a Pull Request
+
+## 📝 License
+
+This project is licensed under the MIT License - see the [LICENSE](./LICENSE) file for details.
+
+## 🆘 Support
+
+- 📧 Email: support@sarlegacy.com
+- 💬 Discord: [SAR Legacy Community](https://discord.gg/sarlegacy)
+- 📚 Documentation: [docs.sarlegacy.com](https://docs.sarlegacy.com)
+- 🐛 Issues: [GitHub Issues](https://github.com/sarlegacy/sar-legacy/issues)
+
+## 🙏 Acknowledgments
+
+- Built with [Next.js](https://nextjs.org/)
+- Styled with [Tailwind CSS](https://tailwindcss.com/)
+- Icons by [Lucide](https://lucide.dev/)
+- Inspired by enterprise needs and modern web standards
+
+---
+
+<div align="center">
+  <strong>SAR Legacy Platform</strong><br>
+  Bridging Legacy Systems with Modern Solutions
+</div>
